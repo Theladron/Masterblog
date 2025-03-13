@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add blogpost</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        label, textarea, input {
+            display: block;
+            margin-bottom: 10px;
+            width: 300px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add new blogpost</h2>
+    <form action="/add" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="content">Blogpost:</label>
+        <textarea id="content" name="content" rows="8" required></textarea>
+
+        <button type="submit">Add post</button>
+    </form>
+</body>
+</html>

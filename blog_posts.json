@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "author": "Jim Doe",
+            "title": "Second Post",
+            "content": "This is another post."
+        },
+        {
+            "id": 2,
+            "author": "test",
+            "title": "test2",
+            "content": "test3"
+        },
+        {
+            "id": 3,
+            "author": "Phil",
+            "title": "Hello",
+            "content": "Hello to my blog"
+        }
+    ],
+    "NEXT_POST_ID": 5
+}
