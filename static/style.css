@@ -1,57 +1,193 @@
+/* Allgemeine Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    padding: 40px;
+    margin: 0;
+    line-height: 1.6;
 }
 
+/* Überschrift für den Blog */
 h1 {
     text-align: center;
-    color: #4F4F4F;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2.5em;
 }
 
+/* Container für die Blogposts */
 .post {
-    background-color: #FFF;
-    border: 1px solid #DDD;
-    padding: 20px;
-
-    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover-Effekt für Posts */
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titel des Posts */
 .post h2 {
+    font-size: 1.8em;
     margin-top: 0;
+    color: #34495e;
 }
 
+/* Autoreninformation */
+.post p em {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Allgemeiner Text */
 .post p {
-    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-.delete-btn {
-    background-color: #e74c3c;
-    align: right;
-    color: white;
+/* Kommentare */
+.comments {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #ddd;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.comment p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Update und Delete Buttons */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+.update-btn, .delete-btn {
+    padding: 12px 20px;
+    font-size: 1em;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.delete-btn:hover {
-    background-color: #c0392b;
-}
-
+/* Update Button */
 .update-btn {
     background-color: #3498db;
-    align: right;
     color: white;
-    border: none;
-    cursor: pointer;
 }
 
 .update-btn:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
-.btn-group {
-    display: flex;
-    gap: 5px;
-    margin-bottom: 20px;
+/* Delete Button */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Link zum Hinzufügen eines neuen Posts */
+a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .post h2 {
+        font-size: 1.5em;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .update-btn, .delete-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .comments {
+        padding-left: 10px;
+    }
+
+    .comment {
+        padding: 8px;
+    }
+
+    a {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .post h2 {
+        font-size: 1.3em;
+    }
+
+    .comment p {
+        font-size: 0.95em;
+    }
+
+    .update-btn, .delete-btn {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+
+    a {
+        font-size: 1em;
+    }
 }
