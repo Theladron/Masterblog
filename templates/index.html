@@ -13,7 +13,13 @@
         <p><em>Written by {{ post.author }}</em></p>
         <p>{{ post.content }}</p>
 
-        <!-- Kommentare -->
+        <div class="like-section">
+            <form action="/like/{{ post.id }}">
+                <button class="like-btn" type="submit">Like ❤️</button>
+                <span>{{ post.likes }}</span>
+            </form>
+        </div>
+
         <div class="comments">
             <h3>Comments</h3>
             {% for comment in post.comments %}
@@ -23,7 +29,6 @@
             {% endfor %}
         </div>
 
-        <!-- Buttons (Update/Delete) innerhalb des Kommentarbereichs -->
         <div class="btn-group">
             <form action="/update/{{ post.id }}">
                 <button class="update-btn" type="submit">Update</button>

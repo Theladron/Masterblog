@@ -3,17 +3,24 @@
         {
             "id": 2,
             "author": "John Doe",
-            "title": "test2",
+            "title": "test22",
             "content": "test3",
-            "likes" : 0
+            "likes": 0
         },
         {
-            "id": 3,
+            "id": 5,
             "author": "Phil",
-            "title": "Hello",
-            "content": "Hello to my blog",
-            "likes" : 0
+            "title": "Welcome",
+            "content": "Welcome to my Blog. Everything you see here is still in progression",
+            "likes": 0
+        },
+        {
+            "id": 6,
+            "author": "test4",
+            "title": "Lets test again",
+            "content": "How will scrolling look?",
+            "likes": 0
         }
     ],
-    "NEXT_POST_ID": 5
+    "NEXT_POST_ID": 7
 }
