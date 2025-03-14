@@ -20,25 +20,17 @@
             </form>
         </div>
 
-        <div class="comments">
-            <h3>Comments</h3>
-            {% for comment in post.comments %}
-                <div class="comment">
-                    <p><strong>{{ comment.author }}:</strong> {{ comment.content }}</p>
-                </div>
-            {% endfor %}
-        </div>
-
         <div class="btn-group">
             <form action="/update/{{ post.id }}">
                 <button class="update-btn" type="submit">Update</button>
             </form>
+
             <form action="/delete/{{ post.id }}">
                 <button class="delete-btn" type="submit">Delete</button>
             </form>
         </div>
     </div>
     {% endfor %}
-    <a href="/add">Neuen Blogpost hinzufügen</a>
+    <a href="/add">Add Blockpost</a>
 </body>
 </html>

@@ -20,7 +20,14 @@
             "title": "Lets test again",
             "content": "How will scrolling look?",
             "likes": 0
+        },
+        {
+            "id": 7,
+            "author": "MO",
+            "title": "asd",
+            "content": "dwa",
+            "likes": 0
         }
     ],
-    "NEXT_POST_ID": 7
+    "NEXT_POST_ID": 8
 }
